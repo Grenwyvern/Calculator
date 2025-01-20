@@ -49,10 +49,14 @@ public class IOFormatsSM1 {
         
         //Initialize Variables with User Inputs
         sandwichPrice = Double.parseDouble(JOptionPane.showInputDialog(null, "1) Enter the price for a sandwich "));
+
         chipsPrice = Double.parseDouble(JOptionPane.showInputDialog(null, "1) Please enter the price for chips "));
+
         sodaPrice = Double.parseDouble(JOptionPane.showInputDialog(null, "1) Enter the price for a soda "));
+
         
         childAgeMonths = Integer.parseInt(JOptionPane.showInputDialog(null, "2/3) Enter age in [months] "));
+
         addedMonths = Integer.parseInt(JOptionPane.showInputDialog(null, "2/3) Enter added months for the child "));
         
         itemPrice = Double.parseDouble(JOptionPane.showInputDialog(null, "4) Enter retail price of item "));
@@ -60,10 +64,13 @@ public class IOFormatsSM1 {
         radius = Double.parseDouble(JOptionPane.showInputDialog(null, "5) Enter circle radius [m] "));
         
         hits = Integer.parseInt(JOptionPane.showInputDialog(null, "6) Enter number of hits "));
+
         atBats = Integer.parseInt(JOptionPane.showInputDialog(null, "6) Enter number of atBats "));
         
         item1Inventory = Integer.parseInt(JOptionPane.showInputDialog(null, "7) Enter starting first item quantity "));
+
         item2Inventory = Integer.parseInt(JOptionPane.showInputDialog(null, "8) Enter starting second item quantity "));
+        
         deliveryAmount = Integer.parseInt(JOptionPane.showInputDialog(null, "8) Enter second item delivery quantity "));
         
         //Computation and Output Display:
