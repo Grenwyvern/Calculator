@@ -1,0 +1,111 @@
+<SCRIPT LANGUAGE="javascript">
+function scoreit()
+{
+
+function getselectedIndex(){
+return document.quiz.q1.selectedIndex
+return document.quiz.q2.selectedIndex
+return document.quiz.q3.selectedIndex
+return document.quiz.q4.selectedIndex
+return document.quiz.q5.selectedIndex
+}
+
+var Answers=new Array(3,3,3,2,4);  // The Answer Key ( 3=Question 1 Answer, 1=Question 2 Answer and so on..)
+var UserAnswers = new Array(document.quiz.q1.selectedIndex,document.quiz.q2.selectedIndex,document.quiz.q3.selectedIndex,document.quiz.q4.selectedIndex,document.quiz.q5.selectedIndex)
+var count0 = 0;
+
+
+if (Answers[0] == UserAnswers[0])
+	{count0 = count0 + 1}
+else
+	{count0 = count0}
+
+if (Answers[1] == UserAnswers[1])
+	{count1 = count0 + 1}
+else
+	{count1 = count0}
+
+if (Answers[2] == UserAnswers[2])
+	{count2 = count1 + 1}
+else
+	{count2 = count1}
+
+if (Answers[3] == UserAnswers[3])
+	{count3 = count2 + 1}
+else
+	{count3 = count2}
+
+if (Answers[4] == UserAnswers[4])
+	{count4 = count3 + 1}
+else
+	{count4 = count3}
+
+
+alert("You got " + count4 + "/5 right.");
+
+ }
+</SCRIPT>
+
+<HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quiz</title>
+<!--
+*************************
+CS10 LAB15V1.HTM
+Date:
+By: 
+Function: QUIZ Program
+*************************
+-->
+
+<FORM NAME="quiz">
+<LABEL for="iq1">#1:  Number 30 on the NBA Basketball team "Warriors" is who" </LABEL><SELECT NAME="q1" id="iq1">
+<OPTION value="SELECTED">Choose One</OPTION>
+<OPTION value="Zip codes">Klay Thompson</OPTION>
+<OPTION value="Scanner Codes">Draymond Green</OPTION>
+<OPTION value="Price Codes">Stephen Curry</OPTION>
+<OPTION value="Bar Codes">Andrew Wiggins</OPTION>
+</SELECT>
+<P>
+
+<LABEL for="iq2">#2:  Windows 11 was released on which day? a</LABEL><SELECT NAME="q2" id="iq2">
+<OPTION value="SELECTED">Choose One</OPTION>
+<OPTION value="CRT">October 7th</OPTION>
+<OPTION value="OCR">Otober 12th</OPTION>
+<OPTION value="LCD">October 5th</OPTION>
+<OPTION value="MICR">October 9th</OPTION>
+</SELECT>
+<P>
+
+<LABEL for="iq3">#3:  In Binary (1011 + 0100) is:</LABEL><SELECT NAME="q3" id="iq3">
+<OPTION value="SELECTED">Choose One</OPTION>
+<OPTION value="1011">1011</OPTION>
+<OPTION value="0100">0100</OPTION>
+<OPTION value="1111">1111</OPTION>
+</SELECT>
+<P>
+
+<LABEL for="iq4">#4: In Binary (111 - 010) is:</LABEL><SELECT NAME="q4" id="iq4">
+<OPTION value="SELECTED">Choose One</OPTION>
+<OPTION value="010">010</OPTION>
+<OPTION value="101">101</OPTION>
+<OPTION value="111">111</OPTION>
+</SELECT>
+<P>
+
+<LABEL for="iq5">#5  A field within a record that is chosen to uniquely identify the record is the?</LABEL><SELECT NAME="q5" id="iq5">
+<OPTION value="SELECTED">Choose One</OPTION>
+<OPTION value="main field">main field</OPTION>
+<OPTION value="super field">super field</OPTION>
+<OPTION value="high field">high field</OPTION>
+<OPTION value="key field">key field</OPTION>
+</SELECT>
+<P>	
+
+<LABEL for="myscore">Click and</LABEL><INPUT TYPE="button" id="myscore" VALUE="Your Score is" onClick="scoreit()"></INPUT></BR>
+
+</FORM>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<script type = "text/javascript">
+	var leap=0;	// Year Example 2014
+	var v2=0;	// Year divided by 4 or 100 or 400
+	var v3=0;	// Integar value of the division
+	var v4=0;	// The Reminder value
+
+	leap=prompt("Enter a year (Example 2014) ","2014");
+	v2=Number(leap)/4
+	v3=parseInt(v2);
+	v4=v2-v3;
+		if (eval(v4)==0)	//Test if year is divided by 40
+
+		{
+		v2=Number(leap)/400;
+		v3=parseInt(v2);
+		v4=v2-v3;
+			if (eval(v4)==0 )
+
+		{
+			v2=Number(leap)/400;
+			v3=parseInt(v2);
+			v4=v2-v3;
+				if (eval(v4)==0 )
+
+		{			
+			document.write(leap + " is a Leap Year");
+		
+		}
+		else
+		{
+			document.write(leap +" is not a Leap Year");
+		}
+	}
+	else
+	{
+			document.write(leap +" is a Leap Year");
+		}
+	}
+	else
+	{
+			document.write(leap +" is not a Leap Year");
+	}
+
+</script>
+<html>
+<!DOCTYPE html>
+<html lang = "en">
+<title>Leap Year</title>
+<IMG SRC="leap-year-formula.gif" WIDTH="450" HEIGHT="340" alt= "Leap Year Flow Chart"></IMG>
+</body>
+</html>

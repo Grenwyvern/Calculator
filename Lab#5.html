@@ -1,0 +1,47 @@
+<SCRIPT LANGUAGE="JavaScript">
+//
+// **************************
+// Program: Lab5.htm
+// Created by: Steven Mecklenburg
+// Date: 09/21/2023
+// Function: Computes Dogyears
+// **************************
+
+/*
+Dog Years Calculator
+*/
+
+function calcit(form){
+	form.dogyears.value = form.humanyears.value * 7
+}
+function clearit(form){
+	form.dogyears.value = " "
+	form.humanyears.value = " "
+}
+
+
+</SCRIPT>
+
+<HTML>
+<!DOCTYPE html>
+<html lang="en">
+<title>LAB5</title>
+<HEAD>
+<BODY>
+<FORM Name="dog">
+
+<IMG SRC="dogyears.gif" WIDTH="450" HEIGHT="200" alt="dog" > 
+
+<TABLE>
+<TR><TD><label for="age">Enter Your Age:</label></TD><TD><INPUT TYPE ="text" id="age" NAME="humanyears" alt="Your Age" SIZE=15></INPUT></TD></TR>
+
+<TR><TD><label for="cal"></label><INPUT TYPE ="button" VALUE="Calculate" id="cal" alt="Calculate" ONCLICK="calcit(this.form)"></INPUT></TD></TR>
+
+<TR><TD><label for="dyears">Your Age in Dog Years is:</label></TD><TD><INPUT TYPE="text"  NAME="dogyears"id="dyears" alt="Your Age in Dogyears"  SIZE=15></INPUT></TD></TR>
+
+<TR><TD><label for="clear"></label><INPUT TYPE ="button" VALUE="Clear" id="cl" alt="CLEAR" ONCLICK="clearit(form)"></INPUT></TD></TR>
+
+</TABLE>
+</BODY>
+</FORM>
+</HTML>

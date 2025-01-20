@@ -1,0 +1,78 @@
+<FORM>
+
+<SCRIPT Language = "JavaScript">
+//
+// ****************************
+// Program: LAB7v1.html
+// Created by:
+// Date:
+// Function: Pea Shell Game
+// ***************************
+
+function shell1(form){
+	var pea = Math.floor(Math.random()*3);
+	form.outcome.value = "";
+	if (pea==0)
+		{
+			form.outcome.value = "You Win -- The pea was in shell "+(pea+1);
+		}
+		else
+		{
+			form.outcome.value ="You Lose -- The pea is in shell "+(pea+1);
+		}
+}
+
+function shell2(form){
+	var pea = Math.floor(Math.random()*3);
+	form.outcome.value = "";
+	if (pea==1)
+		{
+			form.outcome.value = "You Win -- The pea was in shell "+(pea+1);
+		}
+		else
+		{
+			form.outcome.value ="You Lose -- The pea is in shell "+(pea+1);
+		}
+}
+
+function shell3(form){
+	var pea = Math.floor(Math.random()*3);
+	form.outcome.value = "";
+	if (pea==2)
+		{
+			form.outcome.value = "You Win -- The pea was in shell "+(pea+1);
+		}
+		else
+		{
+			form.outcome.value ="You Lose -- The pea is in shell "+(pea+1);
+		}
+}
+
+function clearit(form){
+	form.outcome.value="";
+}
+
+</SCRIPT>
+<htmll>
+	<!DOCTYPE html>
+	<html lang = "en">
+	<title>LAB7v1</title>
+	<head>
+		<body>
+			<form>
+				<IMG SRC="pea.gif" WIDTH="505" HEIGHT="250" alt="3 Pea Shells" ></IMG>
+
+				<TABLE>
+
+					<TR>
+						<TD><label for = "s1"></label><INPUT TYPE = "button" VALUE = "Is the pea in shell 1?" id="s1" ONCLICK="shell1(this.form)"></TD></INPUT>
+						<TD><label for="s2"></label><INPUT TYPE = "button" VALUE="Is the pea in shell 2?" id="s2" ONCLICK="shell2(this.form)"></TD></INPUT>
+						<TD><label for="s3"></label><INPUT TYPE = "button" VALUE="Is the pea in shell 2?" id="s3" ONCLICK="shell3(this.form)"></TD></INPUT></TR>
+						<TR><TD><TD><label for="clr"></label><INPUT TYPE ="button" VALUE="Clear" id="clr" ONCLICK="clearit(this.form)"></INPUT></TD></TD></TR>
+
+						<TR><TD><label for="outcome">The Outcome is:</label></TD><TD><INPUT TYPE="text" Name="outcome" id="outcome" readonly size=31></INPUT></TD></TR>
+				</TABLE>
+			</form>
+		</body>
+	</head>
+</html>
